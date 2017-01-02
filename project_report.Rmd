@@ -1,17 +1,3 @@
-title	author	date	output
-Practical Machine Learning Course Project Report
-gloriali
-June 20, 2014
-html_document
-toc
-true
-library(ggplot2)
-library(caret)
-library(randomForest)
-setwd("~/Study/UBC/PracticalMachineLearning")
-load("project.Rdata")
-Load data
-
 Load data.
 Remove near zero covariates and those with more than 80% missing values since these variables will not provide much power for prediction.
 Calculate correlations between each remaining feature to the response, classe. Use spearman rank based correlation because classe is a factor.
